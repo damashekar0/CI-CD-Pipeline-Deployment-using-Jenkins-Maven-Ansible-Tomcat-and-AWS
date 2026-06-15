@@ -105,7 +105,8 @@ The pipeline automates source code checkout, build, testing, artifact generation
 
 &#x20;                   +------------------+
 
- !\[image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/AWS%20CICD%20Pipeline%20Using%20Jenkins%2C%20Maven%2C%20Ansible%20project.png).
+
+![image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/AWS%20CICD%20Pipeline%20Using%20Jenkins%2C%20Maven%2C%20Ansible%20project.png).
 
 
 -Launch EC2 instance t2.micro = Jenkins + Ansible 
