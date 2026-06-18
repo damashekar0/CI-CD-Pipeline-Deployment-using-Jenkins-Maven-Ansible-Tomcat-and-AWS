@@ -12,99 +12,55 @@ The pipeline automates source code checkout, build, testing, artifact generation
 
 
 
-\#Architecture:
+# Architecture
 
-&#x20;                   +------------------+
-
-
-&#x20;                   |    Developers    |
-
-&#x20;                   +------------------+
-
-&#x20;                             |
-
-&#x20;                             | Push Code
-
-&#x20;                             v
-
-&#x20;                   +------------------+
-
-&#x20;                   |      GitHub      |
-
-&#x20;                   +------------------+
-
-&#x20;                             |
-
-&#x20;                             | Checkout
-
-&#x20;                             v
-
-&#x20;       +------------------------------------------------+
-
-&#x20;       |          Jenkins + Ansible Server              |
-
-&#x20;       +------------------------------------------------+
-
-&#x20;       |                                                |
-
-&#x20;       |  Stage 1 : Checkout Source Code                |
-
-&#x20;       |  Stage 2 : Build (mvn compile)                 |
-
-&#x20;       |  Stage 3 : Test (mvn test)                     |
-
-&#x20;       |  Stage 4 : Generate Artifact (.war)            |
-
-&#x20;       |                                                |
-
-&#x20;       +------------------------------------------------+
-
-&#x20;                             |
-
-&#x20;                             | Ansible Playbook
-
-&#x20;                             v
-
-&#x20;                +----------------------------+
-
-&#x20;                |      Deploy Artifact       |
-
-&#x20;                +----------------------------+
-
-&#x20;                             |
-
-&#x20;               +-------------+-------------+
-
-&#x20;               |                           |
-
-&#x20;               v                           v
-
-&#x20;     +------------------+      +------------------+
-
-&#x20;     |  Tomcat Server 1 |      |  Tomcat Server 2 |
-
-&#x20;     +------------------+      +------------------+
-
-&#x20;     | Java + Tomcat    |      | Java + Tomcat    |
-
-&#x20;     | Application WAR  |      | Application WAR  |
-
-&#x20;     +------------------+      +------------------+
-
-&#x20;               |                           |
-
-&#x20;               +-------------+-------------+
-
-&#x20;                             |
-
-&#x20;                             v
-
-&#x20;                   +------------------+
-
-&#x20;                   |     End Users    |
-
-&#x20;                   +------------------+
-
+```text
+                   +------------------+
+                   |    Developers    |
+                   +------------------+
+                             |
+                             | Push Code
+                             v
+                   +------------------+
+                   |      GitHub      |
+                   +------------------+
+                             |
+                             | Checkout
+                             v
+       +------------------------------------------------+
+       |          Jenkins + Ansible Server              |
+       +------------------------------------------------+
+       |                                                |
+       |  Stage 1 : Checkout Source Code                |
+       |  Stage 2 : Build (mvn compile)                 |
+       |  Stage 3 : Test (mvn test)                     |
+       |  Stage 4 : Generate Artifact (.war)            |
+       |                                                |
+       +------------------------------------------------+
+                             |
+                             | Ansible Playbook
+                             v
+                +----------------------------+
+                |      Deploy Artifact       |
+                +----------------------------+
+                             |
+               +-------------+-------------+
+               |                           |
+               v                           v
+     +------------------+      +------------------+
+     |  Tomcat Server 1 |      |  Tomcat Server 2 |
+     +------------------+      +------------------+
+     | Java + Tomcat    |      | Java + Tomcat    |
+     | Application WAR  |      | Application WAR  |
+     +------------------+      +------------------+
+               |                           |
+               +-------------+-------------+
+                             |
+                             v
+                   +------------------+
+                   |     End Users    |
+                   +------------------+
+```
 
 ![image alt](https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/AWS%20CICD%20Pipeline%20Using%20Jenkins%2C%20Maven%2C%20Ansible%20project.png)
 
