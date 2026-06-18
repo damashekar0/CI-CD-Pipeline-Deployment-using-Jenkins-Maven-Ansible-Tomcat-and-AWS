@@ -1,4 +1,4 @@
-\# 🚀 AWS CI/CD Pipeline using Jenkins, Maven, Ansible and Tomcat
+## 🚀 AWS CI/CD Pipeline using Jenkins, Maven, Ansible and Tomcat
 
 \# 📖 Project Overview
 
@@ -121,7 +121,7 @@ The pipeline automates source code checkout, build, testing, artifact generation
 \- Custom TCP (8080) → Anywhere IPv4 (0.0.0.0/0)
 
 
- !\[image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/ec2-instances.png).
+ ![image alt](https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/ec2-instances.png).
 
 ## Step 1 : 🔧 Jenkins Installation on Ansible Server
 
@@ -348,7 +348,7 @@ PasswordAuthentication yes
 
 ```
 
-!\[image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/ssh-password-authentication-config.png).
+![image alt](https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/ssh-password-authentication-config.png).
 
 
 
@@ -747,7 +747,7 @@ vi tomcat.yml
 ```
 
 
-!\[image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/setup-tomcat.png).
+![image alt](https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/setup-tomcat.png).
 
 
 
@@ -885,7 +885,7 @@ root123456
 
 
 
-!\[image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/tomcat%20server.png).
+![image alt](https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/tomcat%20server.png).
 
 
 # Step 5: Integrate Ansible with Jenkins for Automated Deployment
@@ -1056,7 +1056,7 @@ Project Type : Pipeline
 
 Click \*\*OK\*\*.
 
-!\[image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/jenkins.png).
+![image alt](https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/jenkins.png).
 
 
 
@@ -1377,7 +1377,7 @@ Jenkins will automatically:
 
 7\. Deploy the application automatically.
 
-!\[image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/jenkin%20deployment.png).
+![image alt](https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/jenkin%20deployment.png).
 
 
 
@@ -1451,7 +1451,7 @@ myapp/
 
 ```
 
-!\[image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/tomcat%20web%20application.png).
+![image alt](https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/tomcat%20web%20application.png).
 
 
 
@@ -1557,7 +1557,7 @@ Password : root123456
 
 ## Output:
 
-!\[image alt].(https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/output%20.png).
+![image alt](https://github.com/damashekar0/CI-CD-Pipeline-Deployment-using-Jenkins-Maven-Ansible-Tomcat-and-AWS/blob/d2cae0589070b8d0fcc225698e4d4a9a9b59eef9/screenshots/output%20.png).
 
 
 
