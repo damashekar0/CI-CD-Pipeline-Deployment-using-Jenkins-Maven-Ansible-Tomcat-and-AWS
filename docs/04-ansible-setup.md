@@ -1,8 +1,8 @@
-\# Ansible Setup
+# Ansible Setup
 
 
 
-\## Install Ansible
+## Install Ansible
 
 
 
@@ -38,7 +38,7 @@ ansible --version
 
 
 
-\## Configure Inventory
+## Configure Inventory
 
 
 
@@ -66,7 +66,7 @@ Example
 
 
 
-\## Test Connectivity
+## Test Connectivity
 
 
 
