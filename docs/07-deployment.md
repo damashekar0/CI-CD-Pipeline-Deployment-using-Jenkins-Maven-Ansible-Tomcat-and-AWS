@@ -1,8 +1,8 @@
-\# Application Deployment
+# Application Deployment
 
 
 
-\## Create Deployment Playbook
+## Create Deployment Playbook
 
 
 
@@ -14,7 +14,7 @@ vi deploy.yml
 
 
 
-\## Deploy WAR File
+## Deploy WAR File
 
 
 
@@ -26,7 +26,7 @@ ansible-playbook deploy.yml
 
 
 
-\## Jenkins Integration
+## Jenkins Integration
 
 
 
@@ -52,7 +52,7 @@ Configure:
 
 
 
-\## Build Pipeline
+## Build Pipeline
 
 
 
@@ -68,7 +68,7 @@ Build Now
 
 
 
-\## Deployment Flow
+## Deployment Flow
 
 
 
@@ -104,3 +104,4 @@ Tomcat Server 2
 
 Application Available
 
+s
