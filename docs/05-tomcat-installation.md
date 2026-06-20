@@ -1,8 +1,8 @@
-\# Tomcat Installation Using Ansible
+# Tomcat Installation Using Ansible
 
 
 
-\## Create Playbook
+## Create Playbook
 
 
 
@@ -14,7 +14,7 @@ vi tomcat.yml
 
 
 
-\## Supporting Files
+## Supporting Files
 
 
 
@@ -38,7 +38,7 @@ vi context.xml
 
 
 
-\## Execute Playbook
+## Execute Playbook
 
 
 
@@ -50,7 +50,7 @@ ansible-playbook tomcat.yml
 
 
 
-\## Verify Tomcat
+## Verify Tomcat
 
 
 
@@ -62,7 +62,7 @@ http://TOMCAT-PUBLIC-IP:8080
 
 
 
-\## Result
+## Result
 
 
 
