@@ -1,12 +1,12 @@
-\# AWS Infrastructure Setup
+# AWS Infrastructure Setup
 
 
 
-\## EC2 Instances
+## EC2 Instances
 
 
 
-\### Jenkins + Ansible Server
+### Jenkins + Ansible Server
 
 
 
@@ -24,7 +24,7 @@ Purpose:
 
 
 
-\### Tomcat Server 1
+### Tomcat Server 1
 
 
 
@@ -38,7 +38,7 @@ Purpose:
 
 
 
-\### Tomcat Server 2
+### Tomcat Server 2
 
 
 
@@ -52,11 +52,11 @@ Purpose:
 
 
 
-\## Security Groups
+## Security Groups
 
 
 
-\### Jenkins Server
+### Jenkins Server
 
 
 
@@ -70,7 +70,7 @@ Purpose:
 
 
 
-\### Tomcat Servers
+### Tomcat Servers
 
 
 
@@ -82,3 +82,4 @@ Purpose:
 
 | 8080 | Tomcat |
 
+s
