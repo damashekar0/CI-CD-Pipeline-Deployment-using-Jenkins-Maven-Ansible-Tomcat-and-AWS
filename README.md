@@ -1,6 +1,6 @@
-## 🚀 AWS CI/CD Pipeline using Jenkins, Maven, Ansible and Tomcat
+# 🚀 AWS CI/CD Pipeline using Jenkins, Maven, Ansible and Tomcat
 
-\# 📖 Project Overview
+# 📖 Project Overview
 
 
 
@@ -87,7 +87,7 @@ Jenkins was installed on the same AWS EC2 instance that was used as the Ansible 
 
 
 
-\### Installation Script
+### Installation Script
 
 
 
@@ -145,7 +145,7 @@ chkconfig jenkins on
 
 
 
-\### Execute the Script
+### Execute the Script
 
 
 
@@ -171,7 +171,7 @@ systemctl status jenkins
 
 
 
-\### Access Jenkins
+### Access Jenkins
 
 
 
@@ -199,7 +199,7 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
 
-\### Components Installed
+### Components Installed
 
 
 
@@ -220,7 +220,7 @@ To enable Ansible communication between the Jenkins/Ansible server and Tomcat wo
 
 
 
-\### Step 1: Set Root Password
+### Step 1: Set Root Password
 
 
 
@@ -238,7 +238,7 @@ passwd root
 
 
 
-\### Step 2: Configure SSH
+### Step 2: Configure SSH
 
 
 
@@ -268,7 +268,7 @@ PasswordAuthentication yes
 
 
 
-\### Step 3: Restart SSH Service
+### Step 3: Restart SSH Service
 
 
 
@@ -280,7 +280,7 @@ systemctl restart sshd
 
 
 
-\### Step 4: Verify Configuration
+### Step 4: Verify Configuration
 
 
 
@@ -309,7 +309,7 @@ PasswordAuthentication yes
 
 
 
-\### Step 5: Check Private IP Address
+### Step 5: Check Private IP Address
 
 
 
@@ -337,7 +337,7 @@ Tomcat Server 2 : 172.31.35.255
 
 
 
-\### Step 6: Test SSH Connectivity
+### Step 6: Test SSH Connectivity
 
 
 
@@ -365,7 +365,7 @@ Enter the root password configured on each Tomcat server.
 
 
 
-\### Step 7: Generate SSH Key
+### Step 7: Generate SSH Key
 
 
 
@@ -385,7 +385,7 @@ Press Enter for all prompts.
 
 
 
-\### Step 8: Copy SSH Key to Worker Nodes
+### Step 8: Copy SSH Key to Worker Nodes
 
 
 
@@ -409,7 +409,7 @@ Enter the root password once.
 
 
 
-\### Step 9: Verify Passwordless Authentication
+### Step 9: Verify Passwordless Authentication
 
 
 
@@ -447,7 +447,7 @@ Ansible was installed on the Jenkins/Ansible server to automate configuration ma
 
 
 
-\### Install Ansible
+### Install Ansible
 
 
 
@@ -461,7 +461,7 @@ sudo dnf install python3 python3-pip -y
 
 
 
-\### Verify Installation
+### Verify Installation
 
 
 
@@ -507,7 +507,7 @@ Add worker node IP addresses:
 
 
 
-\### Test Connectivity
+### Test Connectivity
 
 
 
@@ -537,7 +537,7 @@ Expected Output:
 
 
 
-\### Verify Remote Access
+### Verify Remote Access
 
 
 
@@ -551,7 +551,7 @@ ssh root@172.31.35.255
 
 
 
-\### Outcome
+### Outcome
 
 
 
@@ -568,7 +568,7 @@ After installing Ansible on the Jenkins/Ansible server, create a playbook to aut
 
 
 
-\## Create Tomcat Playbook|
+## Create Tomcat Playbook|
 
 vi tomcat.yml
 
@@ -709,7 +709,7 @@ vi tomcat.yml
 
 
 
-\## Create Tomcat User Configuration
+## Create Tomcat User Configuration
 
 
 
@@ -751,7 +751,7 @@ Create a file named `tomcat-users.xml`
 
 
 
-\## Create Context Configuration
+## Create Context Configuration
 
 
 
@@ -785,7 +785,7 @@ Create a file named `context.xml`
 
 
 
-\## Execute the Playbook
+## Execute the Playbook
 
 
 
@@ -801,7 +801,7 @@ ansible-playbook tomcat.yml
 
 
 
-\## Verification
+## Verification
 
 
 
@@ -856,7 +856,7 @@ After configuring Jenkins, Ansible, and Tomcat servers, integrate Ansible into t
 
 
 
-\## Install Required Jenkins Plugin
+## Install Required Jenkins Plugin
 
 
 
@@ -888,7 +888,7 @@ Restart Jenkins after installation.
 
 
 
-\## Configure Ansible Tool in Jenkins
+## Configure Ansible Tool in Jenkins
 
 
 
@@ -926,11 +926,11 @@ Save the configuration.
 
 
 
-\## Configure Jenkins Credentials
+## Configure Jenkins Credentials
 
 
 
-\### Username and Password
+### Username and Password
 
 
 
@@ -1021,7 +1021,7 @@ Click \*\*OK\*\*.
 
 
 
-\## Configure Pipeline Script
+## Configure Pipeline Script
 
 
 
@@ -1141,7 +1141,7 @@ Save the configuration.
 
 
 
-\## Create Deployment Playbook
+## Create Deployment Playbook
 
 
 
@@ -1207,7 +1207,7 @@ Save and exit.
 
 
 
-\## Test Deployment Manually
+## Test Deployment Manually
 
 
 
@@ -1245,7 +1245,7 @@ tomcat2 : ok=1 changed=1 failed=0
 
 
 
-\## Jenkins Deployment Workflow
+## Jenkins Deployment Workflow
 
 
 
@@ -1299,7 +1299,7 @@ Ansible Playbook
 
 
 
-\## Build and Deploy
+## Build and Deploy
 
 
 
@@ -1342,7 +1342,7 @@ Jenkins will automatically:
 
 
 
-\## Outcome
+## Outcome
 
 
 
@@ -1367,7 +1367,7 @@ After the Jenkins Pipeline completes successfully, Ansible copies the WAR file t
 
 
 
-\### Verify WAR Deployment
+### Verify WAR Deployment
 
 
 
@@ -1411,7 +1411,7 @@ myapp/
 
 
 
-\### Check Tomcat Service Status
+### Check Tomcat Service Status
 
 
 
@@ -1435,7 +1435,7 @@ active (running)
 
 
 
-\### Access Application
+### Access Application
 
 
 
@@ -1487,7 +1487,7 @@ http://15.xx.xx.xx:8080/myapp
 
 
 
-\### Verify Tomcat Manager
+### Verify Tomcat Manager
 
 
 
