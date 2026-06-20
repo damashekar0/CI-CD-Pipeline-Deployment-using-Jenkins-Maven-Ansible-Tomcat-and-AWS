@@ -1,12 +1,12 @@
-\# Jenkins Pipeline
+# Jenkins Pipeline
 
 
 
-\## Pipeline Stages
+## Pipeline Stages
 
 
 
-\### Checkout
+### Checkout
 
 
 
@@ -14,7 +14,7 @@ Downloads source code from GitHub.
 
 
 
-\### Build
+### Build
 
 
 
@@ -30,7 +30,7 @@ mvn compile
 
 
 
-\### Test
+### Test
 
 
 
@@ -46,7 +46,7 @@ mvn test
 
 
 
-\### Artifacts
+### Artifacts
 
 
 
@@ -62,7 +62,7 @@ mvn clean package
 
 
 
-\### Deploy
+### Deploy
 
 
 
@@ -70,7 +70,7 @@ Runs Ansible playbook to deploy WAR file.
 
 
 
-\## Workflow
+## Workflow
 
 
 
