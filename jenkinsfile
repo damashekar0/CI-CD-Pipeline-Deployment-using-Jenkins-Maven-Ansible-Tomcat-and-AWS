@@ -1,0 +1,145 @@
+##Jenkins Pipeline
+
+## Overview
+
+The Jenkins Pipeline automates the complete CI/CD workflow for the Java application.
+
+The pipeline performs the following tasks:
+
+1. Checkout source code from GitHub.
+2. Compile the application using Maven.
+3. Execute test cases.
+4. Generate a WAR artifact.
+5. Deploy the artifact to Tomcat servers using Ansible.
+
+---
+
+## Pipeline Workflow
+
+```text
+GitHub
+   │
+   ▼
+Checkout Source Code
+   │
+   ▼
+Build (mvn compile)
+   │
+   ▼
+Test (mvn test)
+   │
+   ▼
+Package Artifact (WAR)
+   │
+   ▼
+Ansible Deployment
+   │
+   ├── Tomcat Server 1
+   └── Tomcat Server 2
+```
+
+---
+
+## Jenkins Pipeline Stages
+
+### Checkout
+
+Pulls the latest source code from the GitHub repository.
+
+```groovy
+stage('Checkout')
+```
+
+### Build
+
+Compiles the Java source code using Maven.
+
+```groovy
+stage('Build')
+```
+
+Command:
+
+```bash
+mvn compile
+```
+
+### Test
+
+Executes application test cases.
+
+```groovy
+stage('Test')
+```
+
+Command:
+
+```bash
+mvn test
+```
+
+### Artifacts
+
+Packages the application and generates a WAR file.
+
+```groovy
+stage('Artifacts')
+```
+
+Command:
+
+```bash
+mvn clean package
+```
+
+Generated Artifact:
+
+```text
+target/myapp.war
+```
+
+### Deploy
+
+Triggers the Ansible playbook to deploy the WAR file to all Tomcat servers.
+
+```groovy
+stage('Deploy')
+```
+
+---
+
+## Jenkinsfile
+
+The Jenkinsfile is stored in the GitHub repository and is used by Jenkins to execute the pipeline automatically.
+
+Features:
+
+- Source Code Checkout
+- Maven Build
+- Maven Test
+- WAR Packaging
+- Ansible Deployment
+- Automated CI/CD Workflow
+
+---
+
+## Outcome
+
+- Automated build process.
+- Automated testing process.
+- Automated artifact generation.
+- Automated deployment using Ansible.
+- Reduced manual effort and deployment time.
+- Consistent deployment across multiple Tomcat servers.
+
+---
+
+## Technologies Used
+
+- Jenkins
+- Maven
+- GitHub
+- Ansible
+- Apache Tomcat
+- AWS EC2
+- Linux

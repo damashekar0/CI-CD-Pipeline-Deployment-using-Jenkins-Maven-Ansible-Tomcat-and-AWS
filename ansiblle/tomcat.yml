@@ -1,0 +1,61 @@
+---
+- name: Setup Tomcat
+  hosts: all
+  become: yes
+
+  tasks:
+
+    - name: Download Tomcat
+      get_url:
+        url: "https://downloads.apache.org/tomcat/tomcat-11/v11.0.22/bin/apache-tomcat-11.0.22.tar.gz"
+        dest: "/root/"
+
+    - name: Extract Tomcat
+      command: tar -zxvf apache-tomcat-11.0.22.tar.gz
+
+    - name: Rename Directory
+      command: mv apache-tomcat-11.0.22 tomcat
+
+    - name: Install Java
+      yum:
+        name: java-17-amazon-corretto
+        state: present
+
+    - name: Configure Tomcat Users
+      template:
+        src: tomcat-users.xml
+        dest: /root/tomcat/conf/tomcat-users.xml
+
+    - name: Configure Context File
+      template:
+        src: context.xml
+        dest: /root/tomcat/webapps/manager/META-INF/context.xml
+
+    - name: Create Tomcat Service
+      copy:
+        dest: /etc/systemd/system/tomcat.service
+        content: |
+          [Unit]
+          Description=Apache Tomcat Server
+          After=network.target
+
+          [Service]
+          User=root
+          Group=root
+          Type=forking
+          Environment="CATALINA_HOME=/root/tomcat"
+          ExecStart=/root/tomcat/bin/startup.sh
+          ExecStop=/root/tomcat/bin/shutdown.sh
+
+          [Install]
+          WantedBy=multi-user.target
+
+    - name: Reload Systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Start Tomcat
+      service:
+        name: tomcat
+        state: started
+        enabled: yes
