@@ -1,16 +1,15 @@
-\# Project Overview
+## Project Overview
 
 
 
-\## Project Name
+## Project Name
 
 
 
 CI/CD Pipeline Using Jenkins, Maven, Ansible and Apache Tomcat on AWS
 
 
-
-\## Objective
+## Objective
 
 
 
@@ -18,7 +17,7 @@ The objective of this project is to automate application build and deployment us
 
 
 
-\## Technologies Used
+## Technologies Used
 
 
 
@@ -40,7 +39,7 @@ The objective of this project is to automate application build and deployment us
 
 
 
-\## CI/CD Workflow
+## CI/CD Workflow
 
 
 
