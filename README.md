@@ -438,8 +438,7 @@ Successfully configured SSH password authentication and passwordless SSH communi
 
 
 
-
-## Step 3: ⚙️ Install and Configure Ansible
+##Step 3: ⚙️ Install and Configure Ansible
 
 
 
